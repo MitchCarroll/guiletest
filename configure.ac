@@ -12,6 +12,9 @@ AC_PROG_CC
 
 # Checks for libraries.
 AC_CHECK_LIB([guile], [gh_enter])
+AC_CHECK_LIB([GL], [glBegin])
+AC_CHECK_LIB([GLU], [gluPerspective])
+AC_CHECK_LIB([glut], [glutInit])
 
 # Checks for header files.
 
