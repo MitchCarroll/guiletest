@@ -11,6 +11,7 @@ AM_CONFIG_HEADER([config.h])
 AC_PROG_CC
 
 # Checks for libraries.
+AC_CHECK_LIB([guile], [gh_enter])
 
 # Checks for header files.
 
