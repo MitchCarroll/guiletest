@@ -1,7 +1,6 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
-#include <stdio.h>
 #ifdef HAVE_LIBGUILE
 #include <guile/gh.h>
 #endif
@@ -14,6 +13,8 @@
 #ifdef HAVE_LIBGLUT
 #include <GL/glut.h>
 #endif
+#include <stdio.h>
+#include <stdlib.h>
 
 SCM helloWorld()
 {
