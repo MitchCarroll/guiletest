@@ -1,6 +1,3 @@
-#!/usr/bin/guile -s
-!#
-
 (define factorial
   (lambda (n)
     (if (zero? n)
@@ -10,6 +7,5 @@
 (define test 
   (lambda ()
     (begin
-      (display (factorial 5))
+      (display (factorial 3))
       (newline))))
-  
