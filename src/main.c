@@ -16,7 +16,7 @@ void init(int argc, char **argv)
 int main(int argc, char **argv)
 {
   scm_init_guile();
-  scm_c_primitive_load("guile.scm");
+  scm_c_primitive_load(DATADIR "guile.scm");
   scm_call_0(scm_variable_ref(scm_c_lookup("test")));
   scm_shell(argc,argv);
   return 0;
