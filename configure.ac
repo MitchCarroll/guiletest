@@ -2,16 +2,20 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([guile-test], [0.1], [c.mitch.carroll@gmail.com])
+AC_INIT([guiletest], [0.3], [c.mitch.carroll@gmail.com])
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([src/main.c])
+AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
+AC_PROG_CXX
+LT_INIT
+AC_ENABLE_SHARED
 
 # Check for Guile
-PKG_CHECK_MODULES([GUILE], [guile-2.0])
+PKG_CHECK_MODULES([GUILE], [guile-1.8])
 # Checks for libraries.
 
 # Checks for header files.

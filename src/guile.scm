@@ -1,11 +1,4 @@
-(define factorial
-  (lambda (n)
-    (if (zero? n)
-	1
-	(* n (factorial (- n 1))))))
-
-(define test 
-  (lambda ()
-    (begin
-      (display (factorial 3))
-      (newline))))
+(load-extension "libfactorial" "scm_init_factorial_factorial_module")
+(factorial 3)
+(define ! factorial)
+(! 5)
