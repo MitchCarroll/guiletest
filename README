@@ -1,1 +1,5 @@
 A simple project to learn guile and embedded guile scripting
+at present, the project generates a shared library (libfactorial.so),
+and a small binary to test the C++ side of the lib (guiletest).
+to load the library from Guile, one should evaluate:
+(load-extension "libfactorial" "scm_init_factorial_factorial_module")

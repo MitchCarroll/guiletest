@@ -9,5 +9,5 @@ AM_CPPFLAGS = -DDATADIR='"$(pkgdatadir)/"' @GUILE_CFLAGS@
 guiletest_LDADD = -lfactorial @GUILE_LIBS@
 
 factorial_wrap.cpp: factorial.i factorial.h
-	swig -c++ -guile -Linkage module -proxy -package factorial \
+	swig -c++ -guile -Linkage passive -proxy -package factorial \
 		-o factorial_wrap.cpp factorial.i
