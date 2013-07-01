@@ -1,4 +1,5 @@
 A simple project to learn guile and embedded guile scripting
+Now using SWIG to generate bindings for Guile
 at present, the project generates a shared library (libfactorial.so),
 and a small binary to test the C++ side of the lib (guiletest).
 to load the library from Guile, one should evaluate:
