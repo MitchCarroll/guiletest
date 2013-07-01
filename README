@@ -1,1 +1,2 @@
 A simple project to learn guile and embedded guile scripting
+I am now using SWIG to generate wrappers and such.
